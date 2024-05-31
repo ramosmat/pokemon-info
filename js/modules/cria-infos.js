@@ -3,8 +3,10 @@ import initFetchPokemons from "./fetch-pokemon.js";
 export default async function initCriaInfos() {
   const divInfos = document.querySelector(".informacoes");
   const divImg = document.querySelector("[data-img]");
+  const footer = document.querySelector("#contato");
   divInfos.classList.add("ativo");
   divImg.classList.add("ativo");
+  footer.classList.add("ativo");
 
   const fetchInfos = await initFetchPokemons();
   let pokemonInfos = {

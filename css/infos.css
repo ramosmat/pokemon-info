@@ -12,6 +12,10 @@
   gap: 50px;
 }
 
+.informacoes.ativo .footer {
+  padding-top: 0;
+}
+
 #status {
   padding-left: 25px;
   /* border-left: 1px solid grey; */

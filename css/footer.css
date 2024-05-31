@@ -1,9 +1,14 @@
 .footer {
+  padding-top: calc(364px - 28px);
   grid-column: 2 / 4;
 }
 
+.footer.ativo {
+  padding-top: 0;
+}
+
 .footer-container {
-  background: #ffeccc;
+  background: #ffe5dc;
   max-width: 1140px;
   margin: 80px auto 30px auto;
   display: grid;
@@ -39,6 +44,9 @@
 }
 
 @media (width <= 855px) {
+  .footer {
+    padding-top: 0;
+  }
   .footer-container {
     grid-template-columns: 1fr;
     gap: 20px;
